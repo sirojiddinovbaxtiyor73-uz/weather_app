@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>weither app</title>
+    <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./weather.png" type="image/png">
 </head>
 <body>
-    
+    <form class="weatherform">
+        <input type="text" id="weatherinput" placeholder="Enter city">
+        <button id="inputbutton" type="submit">Get weither</button>
+    </form>
+
+    <div class="card" style="display: none;">
+        <h1 id="citydisplay"> Toshkent</h1>
+        <p id="degdisplay"> 28°C</p>
+        <p id="infodisplay"> Humidty: 70%</p>
+        <p id="clauddisplay">Rain</p>
+        <p id="imagedisplay">☀️</p>
+        <p id="errordisplay">Enter a city name</p>
+    </div>
+
+    <script src="./index.js"></script>
 </body>
 </html>
